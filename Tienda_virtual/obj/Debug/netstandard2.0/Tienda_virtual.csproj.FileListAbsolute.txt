@@ -1,0 +1,7 @@
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\bin\Debug\netstandard2.0\Tienda_virtual.deps.json
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\bin\Debug\netstandard2.0\Tienda_virtual.dll
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\obj\Debug\netstandard2.0\Tienda_virtual.csprojAssemblyReference.cache
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\obj\Debug\netstandard2.0\Tienda_virtual.AssemblyInfoInputs.cache
+C:\Users\pc01a\source\repos\Tienda_virtual\Tienda_virtual\obj\Debug\netstandard2.0\Tienda_virtual.AssemblyInfo.cs
