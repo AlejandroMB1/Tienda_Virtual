@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Tienda_virtual.Models.ModelosAux;
 
 namespace Tienda_virtual.Servicios.APIRest
@@ -13,7 +14,7 @@ namespace Tienda_virtual.Servicios.APIRest
 
         #endregion Properties
         #region Métodos
-        public abstract APIResponse SendRequest(T objeto);
+        public abstract Task<APIResponse> SendRequest(T objeto);
         #endregion Métodos
     }
 }

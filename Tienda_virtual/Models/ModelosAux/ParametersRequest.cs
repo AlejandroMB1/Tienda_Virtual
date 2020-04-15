@@ -8,7 +8,7 @@ namespace Tienda_virtual.Models.ModelosAux
     {
         #region Properties
         public List<String> Parametros { get; set; }
-        public List<String> QueryParametros { get; set; }
+        public Dictionary<String,String> QueryParametros { get; set; }
        
         #endregion Properties
 
