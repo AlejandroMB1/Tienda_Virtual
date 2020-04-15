@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Tienda_virtual.Configuracion;
 using Tienda_virtual.Models.ModelosAux;
 
@@ -26,7 +27,7 @@ namespace Tienda_virtual.Servicios.APIRest
         {
             var diccionario = ConfiguracionRest.VerbosConfiguracion;
             String nombreClase;
-            if(diccionario.TryGetValue(verbo, out nombreClase))
+            if(diccionario.TryGetValue(verbo.ToUpper(), out nombreClase))
             {
                 Type tipoClase = Type.GetType(nombreClase);
                 EstrategiaEnvio = (Request<T>)Activator.CreateInstance(tipoClase);
@@ -34,9 +35,9 @@ namespace Tienda_virtual.Servicios.APIRest
 
         }
 
-        public APIResponse EjecutarEstrategia(T objeto)
+        public async Task<APIResponse> EjecutarEstrategia(T objeto)
         {
-            var response = EstrategiaEnvio.SendRequest(objeto);
+            var response = await EstrategiaEnvio.SendRequest(objeto);
             return response;
         }
         #endregion Métodos

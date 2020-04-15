@@ -12,8 +12,20 @@ namespace Tienda_virtual.Servicios.APIRest
         protected String Url { get; set; }
         protected String Verbo { get; set; }
 
+        private static ServicioHeaders servicioHeaders;
+
         #endregion Properties
         #region Métodos
+        protected static ServicioHeaders ServicioHeaders
+        {
+            get{
+                if(servicioHeaders == null)
+                {
+                    servicioHeaders = new ServicioHeaders();
+                }
+                return servicioHeaders;
+            }
+        }
         public abstract Task<APIResponse> SendRequest(T objeto);
         #endregion Métodos
     }
